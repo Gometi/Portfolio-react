@@ -1,3 +1,10 @@
+%section_title{
+    font-size: 50px;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    font-family: cursive;
+}
+
 a:hover{
     text-decoration: none;
 }
@@ -12,10 +19,7 @@ a:hover{
     border-radius: 20px;
 }
 .section_title_projects{
-    font-size: 50px;
-    text-decoration: underline;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
-    font-family: cursive;
+   @extend %section_title
 }
 
 .title{
@@ -60,4 +64,11 @@ a:hover{
     background: black;
     color: white;
     border: 2px solid grey;
+}
+
+.contact{
+    font-family: cursive;
+}
+.section_title_contact{
+    @extend %section_title
 }

@@ -1,13 +1,46 @@
 import React from 'react';
 
 class Projects extends React.Component {
+    constructor(props){
+        super()
+        this.state = {
+            titleInViewPort: false
+        }
+        this.titlePosition = React.createRef();
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+    handleScroll(){
+        //get element
+      const title = this.titlePosition.current;
+      //get the element's bottom position relative to the viewport
+      const titlePosition = title.getBoundingClientRect().bottom +9;
+      //change the state for 'titleInViewPort' to true if the element's postion is inside the viewport,  ie:(element's bottom postion is less than the viewport height)
+      if(titlePosition < window.innerHeight){
+          this.setState({titleInViewPort: true})
+      }
+      else {
+        this.setState({titleInViewPort: false})
+      }
+    
+    }
 
+    componentWillMount(){
+        window.addEventListener('scroll', this.handleScroll)
+        
+    }
+    componentWillUnmount(){
+        window.removeEventListener('scroll', this.handleScroll)
+    }
     render() {
         if (this.props.project) {
             const { title, img, details, link_site, link_github } = this.props.project
+            const titleAnimate = {
+                hide: "title animated zoomOut",
+                show: "title animated zoomIn"
+            }
             return (
                 <>
-                    <h2 className="title">{title}</h2>
+                    <h2 ref={this.titlePosition} className={this.state.titleInViewPort ? titleAnimate.show : titleAnimate.hide}>{title}</h2>
                     <div className="row justify-content-center">
                         <div className="col-md-6 d-flex justify-content-center">
                             <img className="project_image  img-thumbnail" src={img} alt={title} />

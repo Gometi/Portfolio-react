@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import AboutMe from "./components/AboutMe";
 import ProjectBoard from "./components/ProjectBoard";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <AboutMe/>
       <br/>
       <ProjectBoard/>
+      <Contact/>
     </div>
   );
 }
