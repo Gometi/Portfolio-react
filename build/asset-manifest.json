@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe481c46.chunk.css",
+    "main.js": "/static/js/main.c938c396.chunk.js",
+    "main.js.map": "/static/js/main.c938c396.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.43bb1cb8.chunk.js": "/static/js/2.43bb1cb8.chunk.js",
+    "static/js/2.43bb1cb8.chunk.js.map": "/static/js/2.43bb1cb8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.82e678f6c37daf8502ee25bfc171824a.js": "/precache-manifest.82e678f6c37daf8502ee25bfc171824a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.fe481c46.chunk.css.map": "/static/css/main.fe481c46.chunk.css.map",
+    "static/media/EscapeRoom.gif": "/static/media/EscapeRoom.db094954.gif",
+    "static/media/MexRex.gif": "/static/media/MexRex.be3d4060.gif",
+    "static/media/Okiniri_Anime.gif": "/static/media/Okiniri_Anime.5a8e470c.gif",
+    "static/media/aboutMe.css": "/static/media/seaglass.d7986c22.jpg",
+    "static/media/metrova.gif": "/static/media/metrova.6f215b09.gif",
+    "static/media/myPhoto.jpg": "/static/media/myPhoto.4032cda2.jpg",
+    "static/media/postgres.png": "/static/media/postgres.59bcadd6.png",
+    "static/media/react.png": "/static/media/react.2b9d67b4.png",
+    "static/media/projectList.css": "/static/media/wood-grain.d47d1e1f.jpg"
+  }
+}

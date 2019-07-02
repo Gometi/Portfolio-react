@@ -16,7 +16,7 @@ const AboutMe = ()=> {
                     <div className="about_me d-flex flex-column align-items-center">
                         <img className="my_photo" src={require('../project_images/myPhoto.jpg')} alt="Ufuoma Gometi" />
                         <h3 className="brand w-75 text-center">
-                            I am a web developer interested in creating meaningful projects and expressing myself creatively. I use my skills to create friendly user experiences while solving complex problems.
+                            I am a web developer interested in creating meaningful projects and expressing myself creatively. I am eager to use my skills to create friendly user experiences while solving complex problems.
                 </h3>
                     </div>
                     <div className="skills_section d-flex flex-column align-items-center">
