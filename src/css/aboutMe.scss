@@ -1,24 +1,33 @@
+%linkedIn-github-image{
+    margin-top: -150px;
+}
 
-
-.intro{
-    
-    background: url(../project_images/blackboard.jpg);
-    background-size: cover;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
-    border-radius: 20px;
-
+.section-intro{
+    width: 600px;
     h1{
-        color: white;
-    font-family: 'Bangers', cursive;
-    font-size: 50px;
+       font-family: 'Bangers', cursive;
+       text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
     }
 }
+
+// .intro{
+    
+//     background: url(../project_images/blackboard.jpg);
+//     background-size: cover;
+//     box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+//     border-radius: 20px;
+
+//     h1{
+//         color: white;
+//     font-family: 'Bangers', cursive;
+//     font-size: 50px;
+//     }
+// }
 
 .my_photo{
     width: 300px;
     height: 300px;
     border-radius: 15px;
-    box-shadow: 5px 5px rgba(0, 0, 0, .4);
 }
 
 .brand{
@@ -27,20 +36,49 @@
     font-size: 30px;
     font-family: 'Patrick Hand', cursive;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+
 }
 .container1{
-    background: url('../project_images/seaglass.jpg');
-    background-size: cover;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
-    border-radius: 20px;
+    // background: url('../project_images/seaglass.jpg');
+    // background-size: cover;
+    // box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
+    // border-radius: 20px;
 }
 .about_me{
-    background: rgba(146, 145, 145, 0.8);
-    border-radius: 20px 20px 0 0;
+    // background: rgba(146, 145, 145, 0.8);
+    // border-radius: 20px 20px 0 0;
+   margin-left: 120px;
+   margin-top: -430px;
 }
+
+.linkedIn-image{
+     @extend %linkedIn-github-image;
+    transform: scale(0.25);
+}
+.github-image{
+    @extend %linkedIn-github-image;
+    transform: scale(0.125);
+    margin-left: -200px;
+}
+.linkedIn-image:hover{
+    transform: scale(0.30);
+    transition: 1s;
+}
+.github-image:hover{
+    transform: scale(0.135);
+    transition: 1s;
+}
+
 .skills_section{
-    background: rgba(146, 145, 145, 0.8);
-    border-radius: 0 0 20px 20px;
+    // background: rgba(146, 145, 145, 0.8);
+    // border-radius: 0 0 20px 20px;
+    background-color: rgba(233, 231, 231, .98);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    margin-top: 450px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .section_title_skills{
     font-size: 50px;

@@ -1,25 +1,19 @@
-import React from "react";
-
-class Skills extends React.Component {
-    render() {
-        const  titleFont = {fontFamily: "cursive"};
-        const style_express = {
-            background: "white",
-            animationDuration: "1.3s"
-        }
-        return (
-            <div className="d-flex flex-column align-items-center m-4">
-                <h2 style={titleFont}>{this.props.title}</h2>
-                <div className="row justify-content-center">
-                    {this.props.skills.map((skill, index) =>
-                        <div key={index} className="text-center m-1" >
-                            <img className={skill.animate} style={skill.name === "express" ? style_express : {animationDuration: "1.3s"}} src={skill.img} alt={skill.name} />
-                            <p style={{color: "white"}}>{skill.name === "express" ? "" : skill.name}</p>
-                        </div>
-                    )}
+import React from 'react';
+import '../css/aboutMe.css';
+import SkillsAnimation from "./SkillsAnimation";
+import { frontEnd, backEnd } from "./skills_list";
+const Skills = ()=>{
+    return(
+        <>
+        <div className="skills_section d-flex flex-column align-items-center">
+                    <br />
+                    <h1 className="section_title_skills">Skills</h1>
+                    <div className="skills row justify-content-center ">
+                        <SkillsAnimation className="col-6" skills={frontEnd} title="FRONT-END" />
+                        <SkillsAnimation className="col-6" skills={backEnd} title="BACK-END" />
+                    </div>
                 </div>
-            </div>
-        )
-    }
+        </>
+    )
 }
 export default Skills;

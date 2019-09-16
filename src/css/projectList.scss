@@ -1,8 +1,9 @@
 %section_title{
     font-size: 50px;
     text-decoration: underline;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    text-shadow: 5px 5px 5px rgba(226, 221, 221, 0.3);
     font-family: cursive;
+    color: white;
 }
 
 .hide{
@@ -16,13 +17,17 @@ a:hover{
     text-decoration: none;
 }
 .projects{
-    background: url('../project_images/wood-grain.jpg');
+    // background: url('../project_images/wood-grain.jpg');
+    margin-left: 100px;
+    margin-right: 100px;
     background-size: cover;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+    // margin-top: 700px;
 }
 .project_container{
-    background: rgba(238, 237, 237, 0.95);
+    // background: rgba(233, 231, 231, .98);
+    background: rgba(7, 7, 7, 0.98);
     border-radius: 20px;
 }
 .section_title_projects{
@@ -30,7 +35,8 @@ a:hover{
 }
 
 .title{
-    color: rgb(59, 5, 83);
+    // color: rgb(59, 5, 83);
+    color: wheat;
     font-family: 'Patrick Hand', cursive;
     font-size: 32px;
     font-weight: bold;
@@ -45,10 +51,11 @@ a:hover{
 }
 .project_details{
     padding: 10px;
-    color: rgb(2, 19, 58);
+    color: rgb(189, 208, 250);
     font-size: 30px;
     font-family: 'Patrick Hand', cursive;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    text-shadow: 5px 5px 5px rgba(226, 221, 221, 0.3);
+
 }
 .links{
     h3{
@@ -65,7 +72,7 @@ a:hover{
 .site{
     background: grey;
     color: black;
-    border: 2px solid black;
+    border: 2px solid whitesmoke;
 }
 .github{
     background: black;
@@ -75,7 +82,15 @@ a:hover{
 
 .contact{
     font-family: cursive;
+    margin-top: 550px;
+    background-color: rgba(233, 231, 231, .98);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+
 }
 .section_title_contact{
-    @extend %section_title
+    @extend %section_title;
+    color: black;
 }
