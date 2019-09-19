@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/aboutMe.css';
+import '../css/skills.css';
 import SkillsAnimation from "./SkillsAnimation";
 import { frontEnd, backEnd } from "./skills_list";
 const Skills = ()=>{

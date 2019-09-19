@@ -1,0 +1,24 @@
+.skills_section {
+  background-color: rgba(233, 231, 231, 0.98);
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin-top: 450px;
+  margin-bottom: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.section_title_skills {
+  font-size: 50px;
+  text-decoration: underline;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  font-family: cursive;
+}
+
+@media screen and (max-width: 950px) {
+  .skills_section {
+    margin-top: 900px;
+  }
+}
+/*# sourceMappingURL=skills.css.map */

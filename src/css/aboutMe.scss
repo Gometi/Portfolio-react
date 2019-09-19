@@ -31,23 +31,23 @@
 }
 
 .brand{
-    // width: 700px;
+    width: 75%;
      color: rgb(2, 19, 58);
     font-size: 30px;
     font-family: 'Patrick Hand', cursive;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
-
 }
-.container1{
+.about-me-section{
     // background: url('../project_images/seaglass.jpg');
     // background-size: cover;
     // box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
     // border-radius: 20px;
 }
-.about_me{
+.about-me{
     // background: rgba(146, 145, 145, 0.8);
     // border-radius: 20px 20px 0 0;
-   margin-left: 120px;
+   margin-left: calc(100% - 800px);
+   margin-right: calc(100% - 1200px);
    margin-top: -430px;
 }
 
@@ -69,20 +69,71 @@
     transition: 1s;
 }
 
-.skills_section{
-    // background: rgba(146, 145, 145, 0.8);
-    // border-radius: 0 0 20px 20px;
-    background-color: rgba(233, 231, 231, .98);
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
-    border-radius: 20px;
-    margin-top: 450px;
-    margin-bottom: 70px;
-    margin-left: 100px;
-    margin-right: 100px;
+
+
+$screen-width: 1500px;
+$section-intro-width: 600px;
+@mixin media-query($num, $reduce-margin-left) {
+    @media screen and (max-width: $screen-width - $num){
+   .about-me{
+       margin-left: calc(100% - #{$reduce-margin-left});
+    //    margin-right: calc(100% - #{$reduce-margin-right})
+   }
+    }
 }
-.section_title_skills{
-    font-size: 50px;
-    text-decoration: underline;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
-    font-family: cursive;
+
+@mixin media-query-mobile($num, $reduce-margin, $reduce-width, $increase-margin) {
+    @media screen and (max-width: $screen-width - $num){
+        .about-me{
+             display: flex;
+             flex-direction: column;
+             margin-left: calc(100% - #{$reduce-margin});
+             margin-top: -430px - $increase-margin;
+        }
+        .section-intro{
+            width: $section-intro-width - $reduce-width;
+        }
+    }
 }
+//screen width < 1400px
+@include media-query(100, 900px);
+
+//screen width < 1200px
+@include media-query(300, 950px);
+
+//screen width < 950px
+@include media-query-mobile(550, 480px, 0, 450px);
+
+//screen width < 800px
+@include media-query-mobile(700, 550px, 0, 450px);
+
+//screen width < 700px
+@include media-query-mobile(800, 600px, 0, 450px);
+
+//screen width < 600px
+@include media-query-mobile(900, 650px, 0, 450px);
+
+//screen width < 500px
+@include media-query-mobile(1000, 650px, 65, 450px);
+//screen width < 375px
+@include media-query-mobile(1125, 660px, 70, 450px);
+
+
+// @media screen and (max-width: $screen-width - 700){
+//     .about-me{
+//          display: flex;
+//          flex-direction: column;
+//          margin-left: calc(100% - 550px);
+//     }
+// }
+
+// @media screen and (max-width: $screen-width - 800){
+//     .about-me{
+//         margin-left: calc(100% - 600px);
+//    }
+// }
+// @media screen and (max-width: $screen-width - 900){
+//     .about-me{
+//         margin-left: calc(100% - 650px);
+//    }
+// }

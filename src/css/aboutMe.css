@@ -18,14 +18,16 @@
 }
 
 .brand {
+  width: 75%;
   color: #02133a;
   font-size: 30px;
   font-family: 'Patrick Hand', cursive;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.about_me {
-  margin-left: 120px;
+.about-me {
+  margin-left: calc(100% - 800px);
+  margin-right: calc(100% - 1200px);
   margin-top: -430px;
 }
 
@@ -54,21 +56,117 @@
   transition: 1s;
 }
 
-.skills_section {
-  background-color: rgba(233, 231, 231, 0.98);
-  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
-  margin-top: 450px;
-  margin-bottom: 70px;
-  margin-left: 100px;
-  margin-right: 100px;
+@media screen and (max-width: 1400px) {
+  .about-me {
+    margin-left: calc(100% - 900px);
+  }
 }
 
-.section_title_skills {
-  font-size: 50px;
-  text-decoration: underline;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  font-family: cursive;
+@media screen and (max-width: 1200px) {
+  .about-me {
+    margin-left: calc(100% - 950px);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: calc(100% - 480px);
+    margin-top: -880px;
+  }
+  .section-intro {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: calc(100% - 550px);
+    margin-top: -880px;
+  }
+  .section-intro {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: calc(100% - 600px);
+    margin-top: -880px;
+  }
+  .section-intro {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: calc(100% - 650px);
+    margin-top: -880px;
+  }
+  .section-intro {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: calc(100% - 650px);
+    margin-top: -880px;
+  }
+  .section-intro {
+    width: 535px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: calc(100% - 660px);
+    margin-top: -880px;
+  }
+  .section-intro {
+    width: 530px;
+  }
 }
 /*# sourceMappingURL=aboutMe.css.map */
