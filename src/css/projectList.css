@@ -44,8 +44,8 @@ a:hover {
   height: 400px;
   border-radius: 10px;
   border: 2px solid grey;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 5px 5px rgba(226, 221, 221, 0.3);
+          box-shadow: 5px 5px 5px rgba(226, 221, 221, 0.3);
 }
 
 .project_details {
@@ -63,7 +63,7 @@ a:hover {
   font-family: cursive;
 }
 
-.links:hover {
+.contact-links:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   -webkit-transition: 1s;
@@ -95,5 +95,26 @@ a:hover {
 
 .section_title_contact {
   color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .contact {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .project_image {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .contact {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=projectList.css.map */

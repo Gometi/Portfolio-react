@@ -47,7 +47,7 @@ a:hover{
     height: 400px;
     border-radius: 10px;
     border: 2px solid grey;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+    box-shadow: 5px 5px 5px rgba(226, 221, 221, 0.3);
 }
 .project_details{
     padding: 10px;
@@ -65,7 +65,7 @@ a:hover{
         font-family: cursive;
     }
 }
-.links:hover{
+.contact-links:hover{
     transform: scale(1.15);
     transition: 1s;
 }
@@ -88,9 +88,33 @@ a:hover{
     border-radius: 20px;
     margin-left: 100px;
     margin-right: 100px;
-
 }
 .section_title_contact{
     @extend %section_title;
     color: black;
+}
+
+//media queries
+
+//screen width < 1024px
+
+@media screen and(max-width: 1024px) {
+    .projects{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .contact{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .project_image{
+        height: 300px;
+    }
+}
+
+@media screen and(max-width: 415px){
+    .contact{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

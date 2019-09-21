@@ -14,7 +14,7 @@ function App() {
       </div>
       <Parallax y={[-20, 20]}><Skills/></Parallax>
       <Parallax  y={[0, 20]}><ProjectBoard/></Parallax>
-      <Parallax  y={[0, 20]}><Contact/></Parallax>
+      <Parallax  y={[60, 0]}><Contact/></Parallax>
     </div>
   );
 }

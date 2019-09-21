@@ -19,6 +19,40 @@
 @media screen and (max-width: 950px) {
   .skills_section {
     margin-top: 900px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .skills_section {
+    margin-top: 920px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .skills_section {
+    margin-top: 930px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .skills_section {
+    margin-top: 950px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .skills_section {
+    margin-top: 1000px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=skills.css.map */

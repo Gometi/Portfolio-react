@@ -24,7 +24,7 @@
 //     }
 // }
 
-.my_photo{
+.my-photo{
     width: 300px;
     height: 300px;
     border-radius: 15px;
@@ -37,15 +37,8 @@
     font-family: 'Patrick Hand', cursive;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
 }
-.about-me-section{
-    // background: url('../project_images/seaglass.jpg');
-    // background-size: cover;
-    // box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
-    // border-radius: 20px;
-}
+
 .about-me{
-    // background: rgba(146, 145, 145, 0.8);
-    // border-radius: 20px 20px 0 0;
    margin-left: calc(100% - 800px);
    margin-right: calc(100% - 1200px);
    margin-top: -430px;
@@ -71,6 +64,7 @@
 
 
 
+
 $screen-width: 1500px;
 $section-intro-width: 600px;
 @mixin media-query($num, $reduce-margin-left) {
@@ -82,19 +76,40 @@ $section-intro-width: 600px;
     }
 }
 
-@mixin media-query-mobile($num, $reduce-margin, $reduce-width, $increase-margin) {
+@mixin media-query-mobile-width($num, $reduce-margin, $reduce-width, $increase-margin1, $increase-margin2) {
     @media screen and (max-width: $screen-width - $num){
         .about-me{
              display: flex;
              flex-direction: column;
              margin-left: calc(100% - #{$reduce-margin});
-             margin-top: -430px - $increase-margin;
+             margin-top: -430px - $increase-margin1;
         }
         .section-intro{
             width: $section-intro-width - $reduce-width;
         }
+        .image-and-links{
+            margin-left: 0px + $increase-margin2;
+        }
     }
 }
+
+$screen-height: 750px;
+@mixin media-query-mobile-height($num, $reduce-size1, $reduce-size2, $reduce-margin){
+    @media screen and (max-height: $screen-height - $num){
+        .section-intro{
+            transform: scale(1 - $reduce-size2 );
+            margin-top: 0px - $reduce-margin;
+        }
+        .my-photo{
+            transform: scale(1 - $reduce-size1 );
+            margin-top: -80px;
+        }
+        .links{
+            margin-top: -40px;
+        }
+    }
+}
+
 //screen width < 1400px
 @include media-query(100, 900px);
 
@@ -102,21 +117,45 @@ $section-intro-width: 600px;
 @include media-query(300, 950px);
 
 //screen width < 950px
-@include media-query-mobile(550, 480px, 0, 450px);
+@include media-query-mobile-width(550, 480px, 0, 450px, 150px);
 
 //screen width < 800px
-@include media-query-mobile(700, 550px, 0, 450px);
+@include media-query-mobile-width(700, 550px, 0, 450px, 150px);
+
+//screen width < 768px
+@include media-query-mobile-width(700, 550px, 0, 480px, 150px);
+
+//screen height < 750px
+// @include media-query-mobile-height(0, 0.2, 0.2, 0);
 
 //screen width < 700px
-@include media-query-mobile(800, 600px, 0, 450px);
+@include media-query-mobile-width(800, 600px, 0, 480px, 150px);
+
+//screen height < 667px
+@include media-query-mobile-height(83, 0.2, 0.2, 130);
+
+//screen width < 414px and height < 815
+@media (max-width: 414px) and (max-height: 815px){
+    .section-intro{
+        transform: scale(0.8 );
+        // margin-top: 0px - $reduce-margin;
+    }
+    .my-photo{
+        transform: scale(0.8 );
+        margin-top: -80px;
+    }
+    .links{
+        margin-top: -40px;
+    }
+}
 
 //screen width < 600px
-@include media-query-mobile(900, 650px, 0, 450px);
+@include media-query-mobile-width(900, 650px, 0, 500px, 150px);
 
 //screen width < 500px
-@include media-query-mobile(1000, 650px, 65, 450px);
+@include media-query-mobile-width(1000, 650px, 65, 550px, 120px);
 //screen width < 375px
-@include media-query-mobile(1125, 660px, 70, 450px);
+@include media-query-mobile-width(1125, 660px, 70, 450px, 110px);
 
 
 // @media screen and (max-width: $screen-width - 700){

@@ -20,9 +20,9 @@ const AboutMe = () => {
                 </h3>
                 <br/>
                 </div>
-                <div>
-                    <img className="my_photo img-fluid img-thumbnail" src={require('../project_images/myPhoto.jpg')} alt="Ufuoma Gometi" />
-                    <div className="">
+                <div className="image-and-links">
+                    <img className="my-photo img-fluid img-thumbnail" src={require('../project_images/myPhoto.jpg')} alt="Ufuoma Gometi" />
+                    <div className="links">
                         <a href="https://www.linkedin.com/in/ufuoma-gometi">
                             <img className="linkedIn-image" src={require("../project_images/linkedIn.png")} alt="linkedIn" />
                         </a>

@@ -11,7 +11,7 @@
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.my_photo {
+.my-photo {
   width: 300px;
   height: 300px;
   border-radius: 15px;
@@ -83,6 +83,9 @@
   .section-intro {
     width: 600px;
   }
+  .image-and-links {
+    margin-left: 150px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -100,6 +103,29 @@
   .section-intro {
     width: 600px;
   }
+  .image-and-links {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: calc(100% - 550px);
+    margin-top: -910px;
+  }
+  .section-intro {
+    width: 600px;
+  }
+  .image-and-links {
+    margin-left: 150px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -112,10 +138,44 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: calc(100% - 600px);
-    margin-top: -880px;
+    margin-top: -910px;
   }
   .section-intro {
     width: 600px;
+  }
+  .image-and-links {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  .section-intro {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-top: -130px;
+  }
+  .my-photo {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-top: -80px;
+  }
+  .links {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 414px) and (max-height: 815px) {
+  .section-intro {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .my-photo {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-top: -80px;
+  }
+  .links {
+    margin-top: -40px;
   }
 }
 
@@ -129,10 +189,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: calc(100% - 650px);
-    margin-top: -880px;
+    margin-top: -930px;
   }
   .section-intro {
     width: 600px;
+  }
+  .image-and-links {
+    margin-left: 150px;
   }
 }
 
@@ -146,10 +209,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: calc(100% - 650px);
-    margin-top: -880px;
+    margin-top: -980px;
   }
   .section-intro {
     width: 535px;
+  }
+  .image-and-links {
+    margin-left: 120px;
   }
 }
 
@@ -167,6 +233,9 @@
   }
   .section-intro {
     width: 530px;
+  }
+  .image-and-links {
+    margin-left: 110px;
   }
 }
 /*# sourceMappingURL=aboutMe.css.map */

@@ -24,9 +24,29 @@ $screen-width: 1500px;
     @media screen and(max-width: $screen-width - $num) {
         .skills_section{
             margin-top: 450px + $increase-margin;
+            margin-left: 20px;
+            margin-right: 20px;
         }
     }
 }
 
+    // @media screen and(max-height: 667px) {
+    //     .skills_section{
+    //         margin-top: 2000px;
+    //     }
+    // }
+
 //screen width < 950px
 @include media-query(550, 450);
+
+//screen width < 768px
+@include media-query(550, 470);
+
+//screen width < 700px
+@include media-query(550, 480);
+
+//screen width < 600px
+@include media-query(550, 500);
+
+//screen width < 500px
+@include media-query(550, 550);
