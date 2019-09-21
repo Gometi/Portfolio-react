@@ -1,0 +1,52 @@
+.skills_section{
+    // background: rgba(146, 145, 145, 0.8);
+    // border-radius: 0 0 20px 20px;
+    background-color: rgba(233, 231, 231, .98);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    margin-top: 450px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.section_title_skills{
+    font-size: 50px;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    font-family: cursive;
+}
+
+
+//media queries
+$screen-width: 1500px;
+
+@mixin media-query($num, $increase-margin) {
+    @media screen and(max-width: $screen-width - $num) {
+        .skills_section{
+            margin-top: 450px + $increase-margin;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+    // @media screen and(max-height: 667px) {
+    //     .skills_section{
+    //         margin-top: 2000px;
+    //     }
+    // }
+
+//screen width < 950px
+@include media-query(550, 450);
+
+//screen width < 768px
+@include media-query(550, 470);
+
+//screen width < 700px
+@include media-query(550, 480);
+
+//screen width < 600px
+@include media-query(550, 500);
+
+//screen width < 500px
+@include media-query(550, 550);
